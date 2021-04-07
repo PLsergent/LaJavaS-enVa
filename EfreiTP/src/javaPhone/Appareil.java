@@ -36,7 +36,7 @@ public class Appareil implements IAppareil {
     }
 
     // On part du principe que le dernier appel enregistrer est le plus vieux
-    // Autrement dit que l'arraylist "appels" est trié par ordre chronologique
+    // Autrement dit que l'arraylist "appels" est triée par ordre chronologique
     // Ici on vérifie que le nouvel appel ne commence pas avant la fin du dernier appel enregistré
     private boolean checkAppel(Appel newAppel) {
         Pair<Appel, String> infoLastAppel = appels.get(appels.size() - 1);
